@@ -7,8 +7,36 @@ body {
   border-top: 2px solid #ddd;
 }
 
+#nav-table {
+  display: table;
+  position: fixed;
+  top: 0;
+  right: 1.5em;
+  height: 100%;
+  text-align: right;
+  font-size: 80%;
+}
+
+#nav-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#nav a {
+  transition: 0.5s;
+  transition-property: color;
+  -moz-transition: 0.5s;
+  -moz-transition-property: color;
+  -webkit-transition: 0.5s;
+  -webkit-transition-property: color;
+}
+
+#nav a.active {
+  color: #2C2C2C;
+}
+
 #content {
-  padding: 140px 110px 60px 110px;
+  padding: 140px 210px 60px 110px;
 }
 
 h1 {
@@ -109,6 +137,8 @@ ul {
 }
 
 ul li {
+  float: left;
+  width: 40%;
   margin-top: 5px;
   margin-right: 60px;
   list-style: none;
