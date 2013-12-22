@@ -225,3 +225,13 @@ code .number { color: #2f6fad }
     margin-left: 0;
   }
 }
+<<<<<<< HEAD
+=======
+
+code .comment { color: #ddd }
+code .init { color: #2F6FAD }
+code .string { color: #5890AD }
+code .keyword { color: #8A6343 }
+code .number { color: #2F6FAD }
+
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a

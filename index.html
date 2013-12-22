@@ -121,7 +121,11 @@ $  mocha
 
 <h2 id="assertions">Assertions</h2>
 
+<<<<<<< HEAD
 <p>Mocha allows you to use any assertion library you want, if it throws an error, it will work! This means you can utilize libraries such as <a href="https://github.com/visionmedia/should.js">should.js</a>, node's regular <code>assert</code> module, or others. The following is a list of known assertion libraries for node and/or the browser:</p>
+=======
+<p>Mocha allows you to use any assertion library you want, if it throws an error, it will work! This means you can utilize libraries such as <a href="http://github.com/visionmedia/should.js">should.js</a>, node's regular <code>assert</code> module, or others. The following is a list of known assertion libraries for node and/or the browser:</p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <ul>
 <li><a href="https://github.com/visionmedia/should.js">should.js</a> BDD style shown throughout these docs</li>
@@ -292,7 +296,11 @@ $  mocha
   Mocha provides string diffs, however in the future object diffs and
   others may be provided.</p>
 
+<<<<<<< HEAD
 <p><img src="images/reporter-string-diffs.png" alt="string diffs" title="" /></p>
+=======
+<p><img src="http://f.cl.ly/items/3L0T1A0h2N1J3G021i0F/Screen%20Shot%202012-03-01%20at%202.31.31%20PM.png" alt="string diffs" title="" /></p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <h2 id="usage">mocha(1)</h2>
 
@@ -346,12 +354,17 @@ Options:
 
 <h3 id="debug-option">-d, --debug</h3>
 
+<<<<<<< HEAD
 <p>Enables node's debugger support, this executes your script(s) with <code>node debug &lt;file ...&gt;</code> allowing you to step through code and break with the <code>debugger</code> statement. Note the difference between <code>mocha debug</code> and <code>mocha --debug</code>: <code>mocha debug</code> will fire up node's built-in debug client, <code>mocha --debug</code> will allow you to use a different interface — such as the Blink Developer Tools.</p>
+=======
+<p>Enables node's debugger support, this executes your script(s) with <code>node debug &lt;file ...&gt;</code> allowing you to step through code and break with the <strong>debugger</strong> statement.</p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <h3 id="globals-option">--globals &lt;names&gt;</h3>
 
 <p>Accepts a comma-delimited list of accepted global variable names. For example suppose your app deliberately exposes a global named <code>app</code> and <code>YUI</code>, you may want to add <code>--globals app,YUI</code>.</p>
 
+<<<<<<< HEAD
 <h3 id="ignore-leaks-option">--check-leaks</h3>
 
 <p>By default Mocha will not check for global variables leaked while running tests, to enable this pass <code>--check-leaks</code>, to specify globals that are acceptable use <code>--globals</code>, for example <code>--globals jQuery,MyLib</code>.</p>
@@ -359,6 +372,15 @@ Options:
 <h3 id="require-option">-r, --require &lt;name&gt;</h3>
 
 <p>The <code>--require</code> option is useful for libraries such as <a href="https://github.com/visionmedia/should.js">should.js</a>, so you may simply <code>--require should</code> instead of manually invoking <code>require('should')</code> within each test file. Note that this works well for <code>should</code> as it augments <code>Object.prototype</code>, however if you wish to access a module's exports you will have to require them, for example <code>var should = require('should')</code>.</p>
+=======
+<h3 id="ignore-leaks-option">--ignore-leaks</h3>
+
+<p>By default Mocha will fail when global variables are introduced, you may use <code>--globals</code> to specify a few, or use <code>--ignore-leaks</code> to disable this functionality. </p>
+
+<h3 id="require-option">-r, --require &lt;name&gt;</h3>
+
+<p>The <code>--require</code> option is useful for libraries such as <a href="http://github.com/visionmedia/should.js">should.js</a>, so you may simply <code>--require should</code> instead of manually invoking <code>require('should')</code> within each test file. Note that this works well for <code>should</code> as it augments <code>Object.prototype</code>, however if you wish to access a module's exports you will have to require them, for example <code>var should = require('should')</code>.</p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <h3 id="ui-option">-u, --ui &lt;name&gt;</h3>
 
@@ -378,7 +400,11 @@ Options:
 
 <h3 id="grep-option">-g, --grep &lt;pattern&gt;</h3>
 
+<<<<<<< HEAD
 <p>The <code>--grep</code> option when specified will trigger mocha to only run tests matching the given <code>pattern</code> which is internally compiled to a <code>RegExp</code>.</p>
+=======
+<p>The <code>--grep</code> option when specified will trigger mocha to only run tests matching the given <code>pattern</code> which is internally compiled to a <code>RegExp</code>. </p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <p>Suppose for example you have "api" related tests, as well as "app" related tests, as shown in the following snippet; One could use <code>--grep api</code> or <code>--grep app</code> to run one or the other. The same goes for any other part of a suite or test-case title, <code>--grep users</code> would be valid as well, or even <code>--grep GET</code>.</p>
 
@@ -401,7 +427,11 @@ describe('app', function(){
 
 <h3 id="bdd-interface">BDD</h3>
 
+<<<<<<< HEAD
 <p>The "<strong>BDD</strong>" interface provides <code>describe()</code>, <code>it()</code>, <code>before()</code>, <code>after()</code>, <code>beforeEach()</code>, and <code>afterEach()</code>:</p>
+=======
+<p>The "<strong>BDD</strong>" interface provides <code>describe()</code>, <code>it()</code>, <code>before()</code>, <code>after()</code>, <code>beforeEach()</code>, and <code>afterEach()</code>: </p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <pre><code>describe('Array', function(){
   before(function(){
@@ -418,7 +448,11 @@ describe('app', function(){
 
 <h3 id="tdd-interface">TDD</h3>
 
+<<<<<<< HEAD
 <p>The "<strong>TDD</strong>" interface provides <code>suite()</code>, <code>test()</code>, <code>setup()</code>, <code>teardown()</code>, <code>suiteSetup()</code>, and <code>suiteTeardown()</code>.</p>
+=======
+<p>The "<strong>TDD</strong>" interface provides <code>suite()</code>, <code>test()</code>, <code>setup()</code>, and <code>teardown()</code>.</p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <pre><code>suite('Array', function(){
   setup(function(){
@@ -435,7 +469,11 @@ describe('app', function(){
 
 <h3 id="exports-interface">Exports</h3>
 
+<<<<<<< HEAD
 <p>The "<strong>exports</strong>" interface is much like Mocha's predecessor <a href="https://github.com/visionmedia/expresso">expresso</a>. The keys <code>before</code>, <code>after</code>, <code>beforeEach</code>, and <code>afterEach</code> are special-cased, object values
+=======
+<p>The "<strong>exports</strong>" interface is much like Mocha's predecessor <a href="http://github.com/visionmedia/expresso">expresso</a>. The keys <code>before</code>, <code>after</code>, <code>beforeEach</code>, and <code>afterEach</code> are special-cased, object values
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
   are suites, and function values are test-cases.</p>
 
 <pre><code>module.exports = {
@@ -508,7 +546,11 @@ test('#length', function(){
 
 <p>The "nyan" reporter is exactly what you might expect:</p>
 
+<<<<<<< HEAD
 <p><img src="images/reporter-nyan.png" alt="js nyan cat reporter" title="" /></p>
+=======
+<p><img src="http://f.cl.ly/items/3f1P1d2U1y1E0K1W1M0m/Screen%20Shot%202012-08-22%20at%203.59.08%20PM.png" alt="js nyan cat reporter" title="" /></p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <h3 id="tap-reporter">TAP</h3>
 
@@ -527,7 +569,11 @@ test('#length', function(){
 <h3 id="list-reporter">List</h3>
 
 <p>The "List" reporter outputs a simple specifications list as
+<<<<<<< HEAD
   test cases pass or fail, outputting the failure details at
+=======
+  test cases pass or fail, outputting the failure details at 
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
   the bottom of the output.</p>
 
 <p><img src="images/reporter-list.png" alt="list reporter" title="" /></p>
@@ -559,9 +605,15 @@ test('#length', function(){
 
 <p>The HTMLCov reporter extends the JSONCov reporter. The library being tested should first be instrumented by <a href="https://github.com/visionmedia/node-jscoverage">node-jscoverage</a>, this allows Mocha to capture the coverage information necessary to produce a single-page HTML report.</p>
 
+<<<<<<< HEAD
 <p>Click to view the current <a href="coverage.html">Express test coverage</a> report. For an integration example view the mocha test coverage support <a href="https://github.com/visionmedia/express/commit/b6ee5fafd0d6c79cf7df5560cb324ebee4fe3a7f">commit</a> for Express.</p>
 
 <p><img src="images/reporter-htmlcov.png" alt="code coverage reporting" title="" /></p>
+=======
+<p>Click to view the current <a href="coverage.html">Express test coverage</a> report. For an integration example view the mcoha test coverage support <a href="https://github.com/visionmedia/express/commit/b6ee5fafd0d6c79cf7df5560cb324ebee4fe3a7f">commit</a> for Express.</p>
+
+<p><img src="http://f.cl.ly/items/3T3G1h1d3Z2i3M3Y1Y0Y/Screen%20Shot%202012-02-23%20at%208.37.13%20PM.png" alt="code coverage reporting" title="" /></p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <h3 id="min-reporter">Min</h3>
 
@@ -569,7 +621,11 @@ test('#length', function(){
   on failure. This reporter works great with <code>--watch</code> as it clears the terminal
   in order to keep your test summary at the top.</p>
 
+<<<<<<< HEAD
 <p><img src="images/reporter-min.png" alt="min reporter" title="" /></p>
+=======
+<p><img src="http://f.cl.ly/items/460B2r3p3M3k2D3J250m/Screen%20Shot%202012-03-24%20at%2010.46.01%20AM.png" alt="" title="" /></p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <h3 id="doc-reporter">Doc</h3>
 
@@ -608,7 +664,11 @@ test('#length', function(){
 &lt;/section&gt;
 </code></pre>
 
+<<<<<<< HEAD
 <p>The SuperAgent request library <a href="http://visionmedia.github.io/superagent/docs/test.html">test documentation</a> was generated with Mocha's doc reporter using this simple make target:</p>
+=======
+<p>The SuperAgent request library <a href="http://visionmedia.github.com/superagent/docs/test.html">test documentation</a> was generated with Mocha's doc reporter using this simple make target:</p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 
 <pre><code>test-docs:
     make test REPORTER=doc \
@@ -767,7 +827,11 @@ test('#length', function(){
 
 <p>Run the tests:</p>
 
+<<<<<<< HEAD
 <pre><code>$ make test
+=======
+<pre><code>   $ make test
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
 </code></pre>
 
 <p>Run all tests, including interfaces:</p>
@@ -782,7 +846,11 @@ test('#length', function(){
 
 <h2 id="more-information">More information</h2>
 
+<<<<<<< HEAD
 <p>For additional information such as using spies, mocking, and shared behaviours be sure to check out the <a href="https://github.com/visionmedia/mocha/wiki">Mocha Wiki</a> on GitHub. For discussions join the <a href="http://groups.google.com/group/mochajs">Google Group</a>. For a running example of mocha view <a href="example/tests.html">example/tests.html</a>. For the JavaScript API view the <a href="https://github.com/visionmedia/mocha/blob/master/lib/mocha.js#L51">source</a>.</p>
+=======
+<p>For additional information such as using spies, mocking, and shared behaviours be sure to check out the <a href="https://github.com/visionmedia/mocha/wiki">Mocha Wiki</a> on GitHub. For discussions join the <a href="http://groups.google.com/group/mochajs">Google Group</a>. For a running example of mocha view <a href="example/tests.html">example/tests.html</a>.</p>
+>>>>>>> 5a3ad9f7b3b5112a6000ecb19a48c8d9f740f39a
     </section>
     <footer>
       <span>© 2011 TJ Holowaychuk. All rights reserved.</span>
